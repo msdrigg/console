@@ -35,9 +35,9 @@ tokio-stream = "0.1"
 thread_local = "1.1.3"
 console-api = { version = "0.1.2", path = "../console-api", features = ["transport"] }
 tonic = { version = "0.6", features = ["transport"] }
-tracing-core = "0.1.18"
-tracing = "0.1.26"
-tracing-subscriber = { version = "0.3.0", default-features = false, features = ["fmt", "registry"] }
+tracing-core = {git = "https://github.com/msdrigg/tracing", branch = "EnvFilterFilter"}
+tracing = {git = "https://github.com/msdrigg/tracing", branch = "EnvFilterFilter"}
+tracing-subscriber = {git = "https://github.com/msdrigg/tracing", branch = "EnvFilterFilter", default-features = false, features = ["fmt", "registry"] }
 futures = { version = "0.3", default-features = false }
 hdrhistogram = { version = "7.3.0", default-features = false, features = ["serialization"] }
 # The parking_lot dependency is renamed, because we want our `parking_lot`

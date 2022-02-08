@@ -33,9 +33,9 @@ tokio = { version = "1", features = ["full", "rt-multi-thread"] }
 tonic = { version = "0.6", features = ["transport"] }
 futures = "0.3"
 tui = { version = "0.16.0", default-features = false, features = ["crossterm"] }
-tracing = "0.1"
-tracing-subscriber = { version = "0.3.0", features = ["env-filter"] }
-tracing-journald = { version = "0.2", optional = true }
+tracing = {git = "https://github.com/msdrigg/tracing", branch = "EnvFilterFilter"}
+tracing-subscriber = {git = "https://github.com/msdrigg/tracing", branch = "EnvFilterFilter", features = ["env-filter"] }
+tracing-journald = {git = "https://github.com/msdrigg/tracing", branch = "EnvFilterFilter", optional = true }
 prost-types = "0.9"
 crossterm = { version = "0.20", features = ["event-stream"] }
 color-eyre = { version = "0.5", features = ["issue-url"] }

@@ -35,7 +35,7 @@ tonic = { version = "0.6", default-features = false, features = [
 ] }
 prost = "0.9"
 prost-types = "0.9"
-tracing-core = "0.1.17"
+tracing-core = {git = "https://github.com/msdrigg/tracing", branch = "EnvFilterFilter"}
 
 [build-dependencies]
 tonic-build = { version = "0.6", default-features = false, features = [
